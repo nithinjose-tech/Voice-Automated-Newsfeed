@@ -15,7 +15,7 @@ body{
 .josu{
     text-align: center;
 
-     color: white;
+     color: orange;
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -27,3 +27,74 @@ body{
     
 }
 
+.about{
+    color:blue;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.info{
+    text-align: center;
+    color: black;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    box-shadow: 10px 10px 5px black;
+   
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+
+
+.App {
+    text-align: center;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 10vh;
+    background: rgb(34,194,195);
+    background: linear-gradient(0deg, rgba(34,194,195,1) 0%, rgba(45,182,253,1) 100%);
+    color: white;
+  }
+
+  
+  
+  
+  .nav-links{
+    width:40%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    list-style: none;
+    padding:10px;
+  }
+
+  .shadow{
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .li{
+    display: flex;
+    padding-right: 10px;
+    font-size: larger;
+  }
+
+  .logo{
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px
+  }
+
+  .navbar-brand img{
+    height:4em;
+    width:8em;
+    margin-left: 0%;
+    padding-top: 2px;
+    padding-right: 10px;
+    
+
+  }

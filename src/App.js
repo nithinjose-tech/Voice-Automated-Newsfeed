@@ -3,7 +3,15 @@ import alanBtn from '@alan-ai/alan-sdk-web';
 import wordsToNumbers from 'words-to-numbers';
 import NewsCards from './components/NewsCards/NewsCards';
 import useStyles from './styles';
-import './myStyles.css'
+import './myStyles.css';
+import {BrowserRouter as Router,Switch,Route} from  'react-router-dom';
+import About from './About';
+import Info from './Info';
+import Aim from './Aim';
+import Aimer from './Aimer';
+import Nav from './Nav';
+import Welcome from './Welcome';
+import Contact from './Contact';
 
 
 const alanKey='58e33020f8a581ac049f4dc1c47d03712e956eca572e1d8b807a3e2338fdd0dc/stage';
@@ -52,12 +60,21 @@ const App = () => {
         })
     },[])
     return (
+        <Router>
         <body>
              <h1 className='primary'>Voice Automated Newsfeed</h1>
              <h1 className='josu'>Developed by Nithin Jose</h1>
-            
+
+           
+             <Nav />
+             <Route path="/home" component={Welcome} />
+            <Route path="/info" component={Info} />
+            <Route path="/aimer" component={Aimer} />
+            <Route path="/contact" component={Contact} />
            
             <NewsCards articles={newsArticles} activeArticle={activeArticle} />
+            
+            
             
             <div className="built">Built with :</div>
 
@@ -66,6 +83,7 @@ const App = () => {
             </div>
 
         </body>
+        </Router>
     )
 }
 
